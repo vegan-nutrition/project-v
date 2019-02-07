@@ -1,15 +1,12 @@
 :root {
-  --font-primary: 'Quicksand', sans-serif;
-}
-
-html {
-  font-family: var(--font-primary);
-}
-
-:root {
   --color-primary: #dbebc3;
   --color-primary-dark: #079444;
   --secondary: #ea7691;
   --color-accent: #f6941d;
   --color-neutral: #333333;
+  --font-primary: 'Quicksand', sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
 }

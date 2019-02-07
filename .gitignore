@@ -1,5 +1,9 @@
 Gemfile.lock
 
+Gemfile.local
+Gemfile.local.lock
+jekyll_patternbot-master
+
 # Jekyll
 _site
 .jekyll-metadata
