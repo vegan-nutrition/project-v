@@ -1,0 +1,47 @@
+<div class="patternbot-mq-display-wrap push patternbot-font-primary patternbot-color-body">
+  <ol class="patternbot-mq-display patternbot-list-group list-group push-0 pad-b" style="{% for mq in page._PatternbotData.css.gridifier.settings %}width: calc({{mq.mq | strip_trailing_zero}}em + 40em); {% endfor %}">
+    {% for mq in page._PatternbotData.css.gridifier.settings %}
+      <li style="padding-left: {{mq.mq}}em">
+        <div class="patternbot-mq-inner relative">
+          <dl class="patternbot-mq-list patternbot-list-group list-group-inline push-0 gutter-1-2 absolute micro">
+            <dt class="push-0">Media query</dt>
+            <dd class="push-0">{% if mq.mq > 0 %}{{mq.mq | strip_trailing_zero}}em{% else %}∞{% endif %}</dd>
+            <dt class="push-0">Class prefix</dt>
+            <dd class="push-0">{{mq.prefix}}</dd>
+            <dt class="push-0">№ columns</dt>
+            <dd class="push-0">{{mq.columns | strip_trailing_zero}}</dd>
+          </dl>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<hr class="patternbot-hr">
+
+<div class="patternbot-grid-wrap pad-b">
+  {% for mq in page._PatternbotData.css.gridifier.settings %}
+    <h2 class="patternbot-font-primary patternbot-color-body giga normal">Sizes available at “{{mq.prefix}}”</h2>
+    {% for columns in (1..mq.columns) %}
+      <ol class="patternbot-grid-display {% if forloop.last %}push{% endif %}" style="min-width: 320px; {% if mq.mq > 0 %}width: {{mq.mq | strip_trailing_zero}}em{% else %}width: 320px{% endif %}">
+        {% if forloop.first %}
+          <li style="width: 100%">
+            <div class="patternbot-grid-display-inner island-1-4">
+              <code class="micro">.{{mq.prefix}}-1</code>
+            </div>
+          </li>
+        {% else %}
+          {% for i in (1..columns) %}
+            <li style="width: calc(100% / {{columns}})">
+              <div class="patternbot-grid-display-inner island-1-4">
+                <code class="micro">.{{mq.prefix}}-1-{{columns}}</code>
+              </div>
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ol>
+    {% endfor %}
+
+    <hr class="patternbot-hr">
+  {% endfor %}
+</div>

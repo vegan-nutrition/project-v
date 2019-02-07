@@ -1,0 +1,36 @@
+# Direct copy from: https://learn-the-web.algonquindesign.ca/topics/typografier-cheat-sheet/
+
+- classes:
+    - '.island-2'
+    - '.island'
+    - '.island-1-2'
+    - '.island-1-4'
+    - '.island-1-8'
+  description: 'Add padding around all four sides of the box using divisions of the line-height for measurement.'
+- classes:
+    - '.text-left'
+    - '.text-right'
+    - '.text-center'
+  description: 'Text alignment classes.'
+- classes:
+    - '.bold'
+    - '.not-bold'
+  description: 'Font weight classes. There’s also `.normal` as a variation to `.not-bold`'
+- classes:
+    - '.italic'
+    - '.not-italic'
+  description: 'Font style classes.'
+- classes:
+    - '.text-upper'
+    - '.text-lower'
+  description: 'Font capitalization classes: all uppercase & all lowercase.'
+- class: '.hang-punc'
+  description: 'Add to an element at the beginning of a line to make the character hang in the margin.'
+- class: '.wrapper'
+  description: 'Sets the max-width of an element to 52em—which is a fairly good line-length for a website body.'
+- class: '.wrapper-no-center'
+  description: 'Same as wrapper but doesn’t auto center.'
+- class: '.max-length'
+  description: 'Sets the max-width of an element to 36em—which is a fairly good line-length for text content.'
+- class: '.max-length-no-center'
+  description: 'Same as max-length but doesn’t auto center.'

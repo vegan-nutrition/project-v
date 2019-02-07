@@ -1,0 +1,33 @@
+<div class="patternbot-font-primary text-left">
+  {% assign show_hr = false %}
+
+  {% unless page._PatternbotData.css.theme.colors.primary == empty %}
+    {% assign show_hr = true %}
+    {% include patternbot_pattern_brand_color_swatches.html style="large" title="Primary" key="primary" colors=page._PatternbotData.css.theme.colors.primary extra_class="patternbot-color-swatches-primary" %}
+  {% endunless %}
+
+  {% unless page._PatternbotData.css.theme.colors.secondary == empty %}
+    {% assign show_hr = true %}
+    {% include patternbot_pattern_brand_color_swatches.html style="large" title="Secondary" key="secondary" colors=page._PatternbotData.css.theme.colors.secondary extra_class="patternbot-color-swatches-secondary" show_hr=show_hr %}
+  {% endunless %}
+
+  {% unless page._PatternbotData.css.theme.colors.tertiary == empty %}
+    {% assign show_hr = true %}
+    {% include patternbot_pattern_brand_color_swatches.html style="small" title="Tertiary" key="tertiary" colors=page._PatternbotData.css.theme.colors.tertiary show_hr=show_hr %}
+  {% endunless %}
+
+  {% unless page._PatternbotData.css.theme.colors.quaternary == empty %}
+    {% assign show_hr = true %}
+    {% include patternbot_pattern_brand_color_swatches.html style="small" title="Quaternary" key="quaternary" colors=page._PatternbotData.css.theme.colors.quaternary show_hr=show_hr %}
+  {% endunless %}
+
+  {% unless page._PatternbotData.css.theme.colors.accent == empty %}
+    {% assign show_hr = true %}
+    {% include patternbot_pattern_brand_color_swatches.html style="small" title="Accent" key="accent" colors=page._PatternbotData.css.theme.colors.accent show_hr=show_hr %}
+  {% endunless %}
+
+  {% unless page._PatternbotData.css.theme.colors.neutral == empty %}
+    {% assign show_hr = true %}
+    {% include patternbot_pattern_brand_color_swatches.html style="small" title="Neutral" key="neutral" colors=page._PatternbotData.css.theme.colors.neutral show_hr=show_hr %}
+  {% endunless %}
+</div>

@@ -1,0 +1,58 @@
+patternbot:
+  locale: "en-ca"
+  source: "_patterns"
+  config: "config.yml"
+  destination: "pattern-library"
+  font_url: false
+  css:
+    source: "css"
+    modulifier: "modules.css"
+    gridifier: "grid.css"
+    typografier: "type.css"
+    theme: "theme.css"
+    main: "main.css"
+    utility_tag: "@utility"
+    var_tag: "@var"
+  icons:
+    source: "images"
+    filenames:
+      - "icons"
+    extensions:
+      - ".svg"
+  logos:
+    source: "images"
+    filenames:
+      - "logo"
+      - "logo-256"
+      - "logo-64"
+      - "logo-32"
+      - "logo-16"
+    extensions:
+      - ".svg"
+      - ".png"
+  layouts:
+    # default: "Blah, blah…"
+  sample_pages:
+    source: "sample-pages"
+  js:
+    source: "js"
+    main: "main.js"
+
+  title: false
+  description: false
+
+  colors:
+    background: '#fff'
+    accent: false
+    patterns:
+      # brand.logos: hotpink
+      # icons.icons.brachiosaurus: orange
+      # icons.icons.velociraptor.--color-stroke:
+
+  rationales:
+    # typefaces.primary: "Blah, blah…"
+    # colors.secondary: "Blerg, blerg…"
+
+  placeholders:
+    square: '/assets/_patternbot/images/placeholder-1by1.svg'
+    wide: '/assets/_patternbot/images/placeholder-16by9.svg'

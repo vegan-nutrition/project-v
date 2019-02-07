@@ -1,0 +1,20 @@
+<div class="text-left">
+  <div class="patternbot-mq-display-wrap push patternbot-font-primary patternbot-color-body">
+    <ol class="patternbot-mq-display list-group push-0 pad-b" style="{% for mq in page._PatternbotData.css.typografier.settings %}width: calc({{mq.mq | strip_trailing_zero}}em + 40em); {% endfor %}">
+      {% for mq in page._PatternbotData.css.typografier.settings %}
+        <li style="padding-left: {{mq.mq}}em">
+          <div class="patternbot-mq-inner relative">
+            <dl class="patternbot-mq-list list-group-inline push-0 gutter-1-2 absolute micro">
+              <dt class="push-0">Media query</dt>
+              <dd class="push-0">{% if mq.mq > 0 %}{{mq.mq | strip_trailing_zero}}em{% else %}∞{% endif %}</dd>
+              <dt class="push-0">Sizes</dt>
+              <dd class="push-0">{{mq.font_size | strip_trailing_zero}}% / {{mq.line_height | strip_trailing_zero}}rem</dd>
+              <dt class="push-0">Type scale</dt>
+              <dd class="push-0">{{mq.scale | strip_trailing_zero}}</dd>
+            </dl>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
