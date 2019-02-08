@@ -1,0 +1,32 @@
+<section style="font-family:var({{include.font.var}});" {% if include.show_hr %}class="pad-t"{% endif %}>
+  {% if include.show_hr %}<hr class="patternbot-hr">{% endif %}
+
+  <ul class="patternbot-code-details patternbot-list-group list-group-inline micro push-1-2 pad-t">
+    <li class="relative">
+      <code>var({{include.font.var}})</code>
+      <button class="center-contents-vertical patternbot-tool-btn pattern-copy-btn" title="Copy font: {{include.title}}: {{include.font.name_pretty}}" aria-label="Copy font: {{include.title}}: {{include.font.name_pretty}}" data-clipboard-text="var({{include.font.var}})" hidden>
+        <i class="icon i-18">
+          <svg><use xlink:href="#icon-copy"></use></svg>
+        </i>
+      </button>
+    </li>
+  </ul>
+
+  <h2 class="patternbot-color-body yotta" style="font-family:var({{include.font.var}});"><span class="patternbot-type-sample-large">{{include.font.name_pretty}}</span> is {{include.preposition}} {{include.title | downcase}} typeface</h2>
+  {% assign pattern_has_rationale = include.key | has_pattern_rationale:'typefaces' %}
+  {% if pattern_has_rationale %}
+    <div class="patternbot-max-length tera max-length">
+      {{include.key | get_pattern_rationale:'typefaces' | markdownify}}
+    </div>
+  {% endif %}
+
+  {% for weight in include.font.weights %}
+    {% assign weight_data = weight[1] %}
+    {% if weight_data.has_normal %}
+      {% include patternbot_pattern_brand_typeface_weight.html weight=weight_data style="normal" font_var=include.font.var %}
+    {% endif %}
+    {% if weight_data.has_italic %}
+      {% include patternbot_pattern_brand_typeface_weight.html weight=weight_data style="italic" font_var=include.font.var %}
+    {% endif %}
+  {% endfor %}
+</section>

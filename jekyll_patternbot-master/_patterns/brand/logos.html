@@ -1,0 +1,43 @@
+<section class="text-left">
+  <div class="grid">
+    <div class="unit [ xs-1 m-1-2 ]">
+      <h1 class="patternbot-color-body patternbot-brand-company yotta text-left">
+        {% if page._PatternbotConfig.patternbot.title %}
+          {{page._PatternbotConfig.patternbot.title | strip}}
+          <span class="patternbot-sub-heading block giga">{{page._PatternbotLocale.patternlib.title | strip}}</span>
+        {% else %}
+          {{page._PatternbotLocale.patternlib.title | strip}}
+        {% endif %}
+      </h1>
+      <div class="patternbot-brand-desc peta">
+        {% if page._PatternbotConfig.patternbot.description %}
+          {{page._PatternbotConfig.patternbot.description | markdownify}}
+        {% else %}
+          {{page._PatternbotLocale.patternlib.description | markdownify}}
+        {% endif %}
+      </div>
+    </div>
+    <div class="unit [ xs-1 m-1-2 ] text-center gutter">
+      {% if page._PatternbotData.logos.size_large %}
+        <i class="icon i-192 block center-block push-1-2">
+          <img class="img-flex" src="{{site.baseurl}}/{{page._PatternbotConfig.patternbot.logos.source}}/{{page._PatternbotData.logos.size_large}}" alt="">
+        </i>
+      {% endif %}
+      {% if page._PatternbotData.logos.size_64 %}
+        <i class="icon i-64 push-r-1-4">
+          <img class="img-flex" src="{{site.baseurl}}/{{page._PatternbotConfig.patternbot.logos.source}}/{{page._PatternbotData.logos.size_64}}" alt="">
+        </i>
+      {% endif %}
+      {% if page._PatternbotData.logos.size_32 %}
+        <i class="icon i-32 push-r-1-4">
+          <img class="img-flex" src="{{site.baseurl}}/{{page._PatternbotConfig.patternbot.logos.source}}/{{page._PatternbotData.logos.size_32}}" alt="">
+        </i>
+      {% endif %}
+      {% if page._PatternbotData.logos.size_16 %}
+        <i class="icon i-16">
+          <img class="img-flex" src="{{site.baseurl}}/{{page._PatternbotConfig.patternbot.logos.source}}/{{page._PatternbotData.logos.size_16}}" alt="">
+        </i>
+      {% endif %}
+    </div>
+  </div>
+</section>

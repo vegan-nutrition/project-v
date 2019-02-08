@@ -1,0 +1,22 @@
+_layout: "patternbot_pattern_internal"
+_extra_css:
+  - 'brand/brand.min.css'
+
+patterns:
+  logos:
+    title: "Logos"
+    _popout_button: false
+    _resizable: false
+    _code: false
+
+  colors:
+    title: "Colours"
+    _popout_button: false
+    _resizable: false
+    _code: false
+
+  typefaces:
+    title: "Typefaces"
+    _popout_button: false
+    _resizable: false
+    _code: false
