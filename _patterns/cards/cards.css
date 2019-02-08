@@ -1,0 +1,12 @@
+html {
+  text-align: left;
+}
+
+h3 {
+  padding-top: .5em;
+}
+
+card {
+  border-radius: 3px;
+  border-color: --color-primary;
+}
