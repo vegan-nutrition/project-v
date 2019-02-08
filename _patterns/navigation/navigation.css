@@ -1,0 +1,98 @@
+html {
+  text-align: center;
+}
+
+nav {
+  background-color: var(--color-primary);
+}
+
+nav a {
+  color: var(--color-secondary);
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+header nav a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+nav a:hover {
+  width: 100%;
+  background-color: var(--color-primary-light);
+}
+
+nav a.active {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  width: 100%;
+}
+
+.cart {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  transform: translate(0, 33px);
+  display: none;
+}
+
+.cart .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cart .icon:last-child {
+  display: none;
+}
+
+.cart:hover .icon:last-child {
+  display: block;
+}
+
+.current {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.current:hover {
+  color: var(--color-secondary);
+  background-color:  var(--color-primary-light);
+}
+
+@media only screen and (min-width: 25em) {
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  header ul li {
+    display: inline-block;
+    width: 20%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .cart {
+    display: block;
+  }
+
+  header ul .cart-text {
+    display: none;
+  }
+
+}
