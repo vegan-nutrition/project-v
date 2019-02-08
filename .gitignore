@@ -1,6 +1,7 @@
 # Jekyll
 _site
 .jekyll-metadata
+jekyll_patternbot-master
 
 # Adobe files
 *.pdf
