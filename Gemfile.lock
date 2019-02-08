@@ -37,7 +37,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
-    jekyll_patternbot (1.0.3)
+    jekyll_patternbot (1.3.0)
       babosa (~> 1)
       color_contrast_calc (~> 0.5)
       colorator (~> 1)
@@ -79,4 +79,4 @@ DEPENDENCIES
   jekyll_patternbot
 
 BUNDLED WITH
-   1.16.2
+   2.0.1
