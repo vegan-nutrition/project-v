@@ -6,7 +6,7 @@ h3 {
   padding-top: .5em;
 }
 
-card {
+.card {
   border-radius: 3px;
-  border-color: --color-primary;
+  border-color: var(--color-primary);
 }
