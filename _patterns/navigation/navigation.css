@@ -7,7 +7,7 @@ nav {
 }
 
 nav a {
-  color: var(--color-secondary);
+  color: var(--neutral);
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -22,7 +22,6 @@ header nav a {
 nav a:hover {
   width: 100%;
   background-color: var(--color-primary-light);
-  box-shadow: inset 0 -7px 15px rgba(0, 0, 0, .3);
 }
 
 nav a.active {
@@ -31,38 +30,14 @@ nav a.active {
   width: 100%;
 }
 
-.cart {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  transform: translate(0, 33px);
-  display: none;
-}
-
-.cart .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.cart .icon:last-child {
-  display: none;
-}
-
-.cart:hover .icon:last-child {
-  display: block;
-}
-
 .current {
   color: var(--color-primary);
   background-color: var(--color-secondary);
-  box-shadow: inset 0 -7px 15px rgba(0, 0, 0, .3);
 }
 
 .current:hover {
   color: var(--color-secondary);
   background-color:  var(--color-primary-light);
-  box-shadow: inset 0 -7px 15px rgba(0, 0, 0, .3);
 }
 
 @media only screen and (min-width: 25em) {
@@ -88,10 +63,6 @@ nav a.active {
 
   ul {
     margin: 0;
-  }
-
-  .cart {
-    display: block;
   }
 
   header ul .cart-text {
