@@ -30,28 +30,6 @@ nav a.active {
   width: 100%;
 }
 
-.cart {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  transform: translate(0, 33px);
-  display: none;
-}
-
-.cart .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.cart .icon:last-child {
-  display: none;
-}
-
-.cart:hover .icon:last-child {
-  display: block;
-}
-
 .current {
   color: var(--color-primary);
   background-color: var(--color-secondary);
@@ -85,10 +63,6 @@ nav a.active {
 
   ul {
     margin: 0;
-  }
-
-  .cart {
-    display: block;
   }
 
   header ul .cart-text {
