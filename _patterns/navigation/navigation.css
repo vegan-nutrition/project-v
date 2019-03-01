@@ -30,11 +30,19 @@ nav a.active {
   background-color:  var(--color-primary-light);
 }
 
+.logo {
+  max-width: 110%;
+}
+
 @media only screen and (min-width: 25em) {
 
   h1,
   p {
     margin: 0 0 1.3rem;
+  }
+
+  .logo {
+    max-width: 100%;
   }
 
 }
@@ -44,6 +52,10 @@ nav a.active {
   h1,
   p {
     margin: 0 0 1.4rem;
+  }
+
+  .logo {
+    max-width: 110%;
   }
 
   header ul li {
@@ -58,5 +70,14 @@ nav a.active {
   header ul .cart-text {
     display: none;
   }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .logo {
+    max-width: 75%;
+  }
+
 
 }
