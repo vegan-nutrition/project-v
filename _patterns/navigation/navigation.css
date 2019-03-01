@@ -55,7 +55,8 @@ nav a.active {
   }
 
   .logo {
-    max-width: 110%;
+    max-width: 400px;
+    text-align: center;
   }
 
   header ul li {
@@ -76,7 +77,7 @@ nav a.active {
 @media only screen and (min-width: 60em) {
 
   .logo {
-    max-width: 75%;
+    max-width: 400px;
   }
 
 
