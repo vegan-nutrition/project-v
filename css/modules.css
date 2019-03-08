@@ -1048,7 +1048,6 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 3px solid #000;
   outline-offset: 0;
 }
 
