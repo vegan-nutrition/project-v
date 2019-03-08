@@ -1,12 +1,14 @@
-.banner-text{
-  background-color: transparent;
-  color: #efefef;
+.banner {
+  background-color: (rgba(0, 130, 170, 0.2),), url("../images/citrus.jpg");
+  background-size: 100% auto;
+  background-position: center bottom;
 }
 
-.banner {
-  background-image: linear-gradient(rgba(0, 130, 170, 0), rgba(0, 130, 170, 1)), url("../images/citrus.jpg");
-  background-size: cover;
-  background-position: center bottom;
+.banner-content{
+  color: #efefef;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 400px auto;
 }
 
 .banner h1{
