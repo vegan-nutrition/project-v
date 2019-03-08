@@ -1,3 +1,8 @@
-.img-flex {
-  
+.banner {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.banner-text {
+  color: #efefef;
 }
