@@ -1,0 +1,19 @@
+.banner-text{
+  background-color: transparent;
+  color: #efefef;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 130, 170, 0), rgba(0, 130, 170, 1)), url("../images/citrus.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.banner h1{
+  color: #efefef;
+}
+
+.rule {
+  border-top: 3px solid var(--color-text);
+  border-bottom: 3px solid var(--color-text);
+}
