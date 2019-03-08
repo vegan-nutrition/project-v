@@ -4,9 +4,9 @@
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 130, 170, 0), rgba(0, 130, 170, 1)), url("../images/citrus.jpg");
-  background-size: cover;
-  background-position: center bottom;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
 }
 
 .banner h1{
