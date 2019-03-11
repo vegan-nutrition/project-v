@@ -5,3 +5,9 @@ html {
 .black {
   background-color: var(--color-primary);
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
