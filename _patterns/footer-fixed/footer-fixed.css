@@ -1,0 +1,7 @@
+html {
+  color: var(--color-secondary);
+}
+
+.black {
+  background-color: var(--color-primary);
+}
