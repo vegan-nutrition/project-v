@@ -3,12 +3,16 @@ textarea,
 select {
   border-color: var(--color-primary-dark);
   border-radius: 5px;
-
   min-width: 20px;
 }
 
 fieldset {
   border: 0;
+}
+
+.form-align {
+  display: block;
+  text-align: center;
 }
 
 label {
