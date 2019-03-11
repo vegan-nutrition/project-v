@@ -10,3 +10,7 @@
 html {
   font-family: var(--font-primary);
 }
+
+.short-max-length {
+  max-width: 25em;
+}
