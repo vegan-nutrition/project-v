@@ -9,20 +9,18 @@
 </head>
 
 <body>
-  <header role="banner" tabindex="0">
-    <nav class="topnav" role="navigation" id="nav" tabindex="0">
-      <div class="">
-      </div>
+  <header itemscope itemtype="https://schema.org/WPHeader" role="banner" tabindex="0">
+    <nav itemscope itemtype="https://schema.org/Navigation" class="topnav" role="navigation" id="nav" tabindex="0">
       <div class="grid pad-t">
         <div class="unit xs-1 s-1 l-1-2">
-          <a href="{{site.baseurl}}/index.html">
-            <img class="logo gutter-2 img-flex" alt="" src="{{site.baseurl}}/images/veganize-logo.svg">
+          <a itemprop="Url" href="{{site.baseurl}}/index.html">
+            <img itemprop="image" class="logo gutter-2 img-flex" alt="logo" src="{{site.baseurl}}/images/veganize-logo.svg">
           </a>
         </div>
         <div class="unit xs-1 s-1 l-1-2 text-right">
         <ul class="list-group pad-t text-center">
-          <li class="pad-b-1-2"><a class="pad-b-2 hover-text" href="{{site.baseurl}}/progress">Tracking</a></li>
-          <li><a class="pad-b hover-text pad-t-2" href="{{site.baseurl}}/signin">Profile</a></li>
+          <li class="pad-b-1-2"><a itemprop="Url" class="pad-b-2 hover-text" href="{{site.baseurl}}/progress">Tracking</a></li>
+          <li><a itemprop="Url" class="pad-b hover-text pad-t-2" href="{{site.baseurl}}/signin">Profile</a></li>
         </ul>
       </div>
     </nav>
