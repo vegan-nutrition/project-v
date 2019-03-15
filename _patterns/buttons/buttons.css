@@ -36,5 +36,5 @@
 .btn-ghost:hover {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-primary-dark);
 }
