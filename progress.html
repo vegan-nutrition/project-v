@@ -4,18 +4,24 @@ layout: default
 
 {% pattern banner/tracking-banner %}
 
-<div class="pad-t-2 pad-b-2">
-  {% pattern form/breakfast-form %}
+{% pattern cards/progress-cards %}
 
-  {% pattern form/lunch-form %}
+<div class="grid">
+  <div class="unit xs-1 s-1 m-1-3 l-1-3 island">
+    {% pattern form/breakfast-form %}
+  </div>
 
-  {% pattern form/dinner-form %}
+  <div class="unit xs-1 s-1 m-1-3 l-1-3 island">
+    {% pattern form/lunch-form %}
+  </div>
+
+  <div class="unit xs-1 s-1 m-1-3 l-1-3 island">
+    {% pattern form/dinner-form %}
+  </div>
 </div>
 
 <div class="text-center pad-b-2">
 {% pattern buttons/dark-button title="Log"%}
 </div>
-
-{% pattern cards/progress-cards %}
 
 {% pattern footer-fixed/footer-fixed %}

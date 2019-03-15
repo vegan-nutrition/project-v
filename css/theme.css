@@ -11,6 +11,6 @@ html {
   font-family: var(--font-primary);
 }
 
-.short-max-length {
+.short-max-width {
   max-width: 25em;
 }
